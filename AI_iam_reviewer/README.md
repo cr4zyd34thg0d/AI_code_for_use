@@ -54,7 +54,6 @@ This solution is laser-focused on achieving specific security outcomes:
 
 ### Security-Optimized Architecture
 
-```mermaid
 flowchart TB
     A[IAM Policy Change] --> B[EventBridge Rule]
     B --> C[Real-time Security Analysis]
@@ -73,7 +72,6 @@ flowchart TB
     D --> N[Compliance Evidence]
     N --> O[Audit Trail Generation]
 
----
 
 ## Security-Focused Features
 
@@ -370,5 +368,6 @@ For issues or questions:
 2. **Review logs:** `aws logs tail /aws/lambda/ai-iam-* --follow --region us-gov-west-1`
 3. **Validate deployment:** `python3 validate-security-focus.py --stack-name ai-iam-security-analyzer --region us-gov-west-1`
 4. **Review Security Hub findings for specific security issues**
+
 
 The solution is designed to be self-monitoring and self-healing with comprehensive logging and validation built-in.
